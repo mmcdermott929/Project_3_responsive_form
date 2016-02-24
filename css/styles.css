@@ -20,7 +20,7 @@ body {
 .banner{
   color: #fff;
   background: #2D3945;
-  max-width: 320px;
+  max-width: 420px;
   margin: 0 auto;
   padding: 20px;
   }
@@ -31,7 +31,7 @@ body {
 }
 
 form {
-  max-width: 320px;
+  max-width: 420px;
   margin: 0 auto;
   padding: 0 0.5em;
   background: #fff;
@@ -57,6 +57,7 @@ h1 {
 
 hr {
   	border: 0.05em solid #2D3945;
+    margin: 2px 0;
 }
 p, label {
   color: #617383;
@@ -153,32 +154,18 @@ label.light {
   display: inline;
 }
 
-/*
-legend span {
-  background-color: #2D3945;
-  color: #fff;
-  height: 30px;
-  width: 28px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
-}
-*/
-
 input[id="name"]:placeholder-shown, 
 input[type="email"]:placeholder-shown {
   text-align: right;
   font-style: italic;
 }
- select {height: 3.0em;}
+ select {
+   height: 3.0em;
+}
 
 footer {
     background: #fff;
-    max-width: 320px;
+    max-width: 420px;
     margin: 0 auto;
     padding: 5px 0 20px;
 }
@@ -188,6 +175,8 @@ footer p{
   font-style: italic;
 }
 
+/*change display for screens 760px or larger*/
+
 @media screen and (min-width: 759px) {
 
   .container {
@@ -195,8 +184,8 @@ footer p{
   }
   form, .banner, footer{
     min-width: 85%;
-    padding-right: 21%;
-    padding-left: 21%;
+    padding-right: 10%;
+    padding-left: 10%;
   }
   legend{
     width: 100%;
@@ -228,4 +217,23 @@ textarea,
     
   }
   
+}
+
+
+/*styling for the Action Page*/
+.code-news{  
+  padding: 2%;
+  color: white;
+  background-color: white;
+  text-decoration: none;  
+}
+.code-news a{
+  text-decoration: none;
+  color: black;
+}
+.code-news-banner {
+	width: 100%;
+    background-color: black;
+    color: white;
+    min-height: 50px;
 }
