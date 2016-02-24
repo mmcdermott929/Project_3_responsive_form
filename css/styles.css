@@ -1,10 +1,19 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  
-  
 }
+
+
+/* -----------------*/
+
+
+/*element styles*/
+
+
+/* -----------------*/
 
 body {
   font-family: 'Merrweather', serif;
@@ -12,19 +21,46 @@ body {
   background: #fff;
   margin: 0 auto;
 }
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+hr {
+  border: 0.05em solid #2D3945;
+  margin: 2px 0;
+}
+
+p,
+label {
+  color: #617383;
+  font-size: 1.1em
+}
+
+
+/* -----------------*/
+
+
+/*form styles       */
+
+
+/* -----------------*/
+
 .container {
   margin: 0 auto;
   background: #000;
 }
 
-.banner{
+.banner {
   color: #fff;
   background: #2D3945;
   max-width: 420px;
   margin: 0 auto;
   padding: 20px;
-  }
-.banner h1{
+}
+
+.banner h1 {
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 1.30em;
@@ -34,43 +70,35 @@ form {
   max-width: 420px;
   margin: 0 auto;
   padding: 0 0.5em;
-  background: #fff;
- }
-
-h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
+  background-color: #d8e3e0;
 }
-.header h2, .header p {
+
+.header h2,
+.header p {
   margin: 0 0 10px 0;
   text-align: center;
 }
-.header h2{
+
+.header h2 {
   padding-top: 1.20em;
 }
-.header p, {
+
+.header p
+{
   padding-bottom: 1.1em;
- }
-.header + hr {
-  	border: 0.15em solid #000;
 }
 
-hr {
-  	border: 0.05em solid #2D3945;
-    margin: 2px 0;
+.header + hr {
+  border: 0.15em solid #000;
 }
-p, label {
-  color: #617383;
-  font-size: 1.1em
-}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
-input[type="search"],
 input[type="tel"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   font-size: 16px;
   height: auto;
@@ -78,26 +106,50 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #e8eeef;
+  background-color: #e9f5f0;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
   border-radius: 5px;
 }
-input[id="zip-code"]{
-  width:150px;
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+textarea:hover,
+select:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  background-color: #b0d2c8;
+  font-style: italic;
+}
+
+input[id="zip-code"] {
+  width: 150px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 4px 8px 0;
   height: 1.1em;
-  width: 1.2em;  
+  width: 1.2em;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+.newsletter-section label:hover {	
+  cursor: pointer;
+  color: black;
 }
 
 select {
   padding: 6px;
-  height: 32px;  
+  height: 32px;
 }
 
 legend + p {
@@ -105,11 +157,11 @@ legend + p {
   padding-bottom: 0.7em;
 }
 
-textarea{
+textarea {
   min-height: 7.0em;
   margin-top: 0.75em;
   margin-bottom: 0;
-  padding-bottom: 0;  
+  padding-bottom: 0;
 }
 
 button {
@@ -124,7 +176,7 @@ button {
   width: 100%;
   border: 1px solid #3ac162;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
 }
 
@@ -132,10 +184,12 @@ fieldset {
   margin-bottom: 10px;
   border: none;
 }
+
 .contact-section {
-	width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
+
 legend {
   font-size: 1.4em;
   margin-bottom: 10px;
@@ -154,86 +208,128 @@ label.light {
   display: inline;
 }
 
-input[id="name"]:placeholder-shown, 
-input[type="email"]:placeholder-shown {
+.radio-div {
+  margin-bottom: 10px;
+}
+::-webkit-input-placeholder{
   text-align: right;
-  font-style: italic;
 }
- select {
-   height: 3.0em;
+::-moz-placeholder {
+  text-align: right;
 }
+:-ms-input-placeholder {
+  text-align: right;
+}
+
+select {
+  height: 3.0em;
+}
+
+
+/* ------------------------*/
+
+
+/*footer styling            */
+
+
+/* -------------------------*/
 
 footer {
-    background: #fff;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 5px 0 20px;
+  background: #fff;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 5px 0 20px;
 }
 
-footer p{
+footer p {
   text-align: center;
   font-style: italic;
 }
 
+
+/* -----------------------------------------*/
+
+
 /*change display for screens 760px or larger*/
 
-@media screen and (min-width: 759px) {
 
+/* -----------------------------------------*/
+
+@media screen and (min-width: 759px) {
   .container {
-   width: 100%;
+    width: 100%;
   }
-  form, .banner, footer{
+  form,
+  .banner,
+  footer {
     min-width: 85%;
     padding-right: 10%;
     padding-left: 10%;
   }
-  legend{
+  legend {
     width: 100%;
   }
   /*flex it*/
-  
-  label{
-    flex-basis:  25%;
+  label {
+    flex-basis: 25%;
     padding-top: 1.0em;
   }
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  textarea,
   select {
     flex-basis: 75%;
   }
- 
-  input[id="zip-code"]{
+  input[id="zip-code"] {
     flex-basis: 25%;
-    
-}
-  .contact-section{
+  }
+  .contact-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
   }
-  
 }
+
+
+/* ---------------------------*/
 
 
 /*styling for the Action Page*/
-.code-news{  
+
+
+/*---------------------------*/
+
+.header {
+  padding-bottom: 30px;
+}
+
+.header p {
+  font-weight: 700;
+  font-size: 1.30em;
+}
+
+.code-news {
   padding: 2%;
   color: white;
-  background-color: white;
-  text-decoration: none;  
+  background-color: #d8e3e0;
+  text-decoration: none;
 }
-.code-news a{
+
+.code-news a {
   text-decoration: none;
   color: black;
 }
+
+.code-news span {
+  background-color: yellow;
+}
+
 .code-news-banner {
-	width: 100%;
-    background-color: black;
-    color: white;
-    min-height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  min-height: 50px;
 }
